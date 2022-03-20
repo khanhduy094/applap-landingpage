@@ -1,0 +1,26 @@
+- Button
+- Input
+- Textarea
+- Dropdown
+- Menu
+- Card
+- Layout
+- Tab
+- Accordion
+- Checkbox
+- Radio
+- File
+- Range
+- File
+- Circle
+- Animation
+- Grid
+- Toggle
+- Table
+- Pagination
+- Image
+- Background
+- Navigation
+- Menu
+- List....
+  -> Landing page

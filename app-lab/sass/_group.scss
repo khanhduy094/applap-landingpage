@@ -1,0 +1,25 @@
+.group {
+  padding: 40px 0;
+ 
+  &-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: $title-color;
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -60px;
+  }
+  &-img {
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and(maxWidth: 767px) {
+}

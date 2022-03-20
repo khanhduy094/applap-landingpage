@@ -1,0 +1,50 @@
+.download{
+    position: relative;
+    padding-bottom: 52px;
+    &-container{
+        display: flex;
+        align-items: center;
+    }
+    &-left{
+       width: 50%;
+       padding-top: 60px;
+    }
+    &-image{
+        position: absolute;
+        bottom: -45px;
+        right: 0;
+        width: 50%;
+    }
+    &-app{
+        display: flex;
+    }
+    .android{
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    .download{
+        &-container{
+            display: block;
+        }   
+        &-left{
+            width: 100%;
+         }
+        &-image{
+            display: none;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .download-app{
+        display: block;
+    }
+    .android{
+        margin-bottom: 20px;
+    }
+}
+

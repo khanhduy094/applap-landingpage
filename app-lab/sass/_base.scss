@@ -1,0 +1,36 @@
+:root {
+  --wrapper: 1600px;
+  --container: 1170px;
+  --blue-color: #2500f9;
+  --red-color: #f55767;
+  --orange-color: #feaa25;
+  --green-color: #40975f;
+  --title-color: #242f51;
+  --text-color: #616368;
+}
+
+body {
+  background-color: white;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+body,
+input,
+textarea,
+button,
+select {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+img{
+  object-fit: cover;
+}
+
+@media screen and (max-width: 515px) {
+  p{
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,45 @@
+.faq {
+  padding: 160px 0 70px;
+  border-bottom: 1px solid #eee;
+  &-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  &-top {
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &-item {
+    max-width: 950px;
+    margin: 0 auto 10px;
+    background-color: $blue-light-color;
+  }
+  &-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+  }
+  &-item-header ion-icon {
+    font-size: 30px;
+    color: $title-color;
+  }
+  &-content {
+    padding: 0 40px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  &-item-header.active {
+    padding-top: 30px;
+    ion-icon {
+      display: none;
+    }
+    
+  }
+}

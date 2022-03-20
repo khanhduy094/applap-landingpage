@@ -1,0 +1,41 @@
+.design{
+    padding-bottom: 50px; 
+    border-bottom: 1px solid #eee;
+    &-content{
+        display: flex;
+        align-items: center;
+    }
+    &-image{
+        width: 50%;
+        transform: translateX(-10%);
+    }
+    &-info{
+        width: 50%;
+        padding-left: 50px;
+    }
+    &-title{
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .design{
+        padding-bottom: 25px;
+        border: none;
+        &-content{
+            display: block;
+        }
+        &-image,&-info{
+            width: 100%;
+        }
+        &-image{
+            transform: unset;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        &-info{
+            padding-left: 0;
+        }
+    }
+}
+

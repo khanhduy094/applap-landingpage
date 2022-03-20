@@ -1,0 +1,88 @@
+.jackpot {
+  padding-top: 100px;
+  margin-bottom: 100px;
+
+  &-container {
+    max-width: 1030px;
+    margin: 0 auto;
+  }
+  &-top {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+  }
+  &-left {
+    padding-right: 50px;
+    border-right: 1px solid rgba($text-color, 0.2);
+  }
+  &-right {
+    padding: 0 50px;
+  }
+  &-list {
+    --gap: 80px;
+    --colums: 3;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -24px;
+    margin-left: calc(-1 * var(--gap));
+  }
+  &-item {
+    width: calc(calc(100% / var(--colums)) - var(--gap));
+    margin-left: var(--gap);
+    margin-bottom: 24px;
+  }
+  &-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .jackpot{
+    padding: 60px;
+    &-top{
+      display: block;
+      margin-bottom: 60px;
+    }
+    &-left{
+      border: none;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    &-right{
+     padding: 0;
+    }
+
+    &-list{
+      --colums: 2;
+      --gap: 30px;
+    }
+  }
+ 
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .jackpot{
+    padding: 0;
+    &-list{
+      --colums: 2;
+      --gap: 30px;
+    }
+  }
+    
+}
+
+@media screen and (max-width: 519px) {
+    .jackpot-list{
+      --colums: 1;
+      --gap: 1px;
+    }
+  }

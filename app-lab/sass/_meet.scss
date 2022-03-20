@@ -1,0 +1,50 @@
+.meet {
+  padding-top: 150px;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  &-image {
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    transform: translateY(30%);
+  }
+  &-content {
+    width: 50%;
+    padding-right: 150px;
+    margin-left: auto;
+  }
+  &-rating {
+    color: $orange-color;
+  }
+  &-box {
+    display: flex;
+    align-items: center;
+  }
+  &-avatar {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .meet {
+      position: unset;
+        display: block;
+    &-image{
+        width: 100%;
+        position: unset;
+    }
+    &-content{
+        width: 100%;
+        margin-top: 150px;
+        padding: 0 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px){
+    .meet{
+        padding-top: 40px;
+    }
+} 

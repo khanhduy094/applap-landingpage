@@ -1,0 +1,77 @@
+.extra {
+  padding: 170px 0 70px;
+  border-bottom: 1px solid #eee;
+  &-container {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-top {
+    margin-bottom: 70px;
+  }
+  &-choices {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid #eee;
+  }
+  &-choice {
+    padding: 15px 35px;
+    border-radius: inherit;
+    font-weight: 600;
+    text-align: center;
+    &--active{
+        color: white;
+        background-color: $blue-color;
+    }
+    
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 40px;
+    align-items: flex-start;
+  }
+  &-item {
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+  }
+  &-item.is-active {
+    border: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .item-top {
+    padding: 65px 20px 40px;
+    background-color: #f4f7f9;
+  }
+  .item-price .month {
+    font-weight: 400;
+    font-size: 18px;
+    color: $text-color;
+  }
+ 
+  .item-bottom {
+    padding: 40px 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-link {
+    display: block;
+    color: $blue-color;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .extra{
+    padding: 80px 0 30px;
+    &-list{
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+
+  }
+}

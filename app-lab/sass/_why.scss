@@ -1,0 +1,84 @@
+.why {
+  padding-top: 150px;
+  &-container {
+    max-width: 1030px;
+    margin: 0 auto;
+  }
+  &-top {
+    max-width: 680px;
+    margin: 0 auto 85px;
+    text-align: center;
+  }
+  &-title {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 75px;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .item-title {
+    color: $title-color;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .why {
+    padding-top: 50px;
+    &-list {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .why {
+    padding-top: 25px;
+    &-list {
+      grid-template-columns: 1fr;
+      grid-gap: 25px;
+    }
+    &-item{
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &-list {
+      padding: 20px;
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 90%;
+      grid-auto-flow: column;
+      grid-gap: 1.5rem;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+    }
+    &-list::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    &-list > * {
+      scroll-snap-align: start;
+    }
+  }
+}

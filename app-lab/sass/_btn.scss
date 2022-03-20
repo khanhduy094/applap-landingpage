@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 50px;
+  border: 0;
+  outline: none;
+  font-weight: bold;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+  &-primary {
+    background-color: var(--blue-color);
+    color: white;
+  }
+  &:hover {
+    background-color: white;
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .btn{
+    padding: 15px 30px;
+  }
+
+}
